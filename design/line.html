@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.content{
+			
+		}
+		
+		#line{
+			background-color: lightblue;
+			width: 150px;
+			height: 5px;
+			transition: width 1s;
+			transition-timing-function: ease-out;
+		}
+		.line:hover{
+			width: 0px;
+
+		}
+	</style>
+	<script>
+		function changeline()
+		{
+			var line = document.getElementById('line');
+			line.style.height=20px;
+		}
+	</script>
+</head>
+<body>
+	<div class="content">
+		<h2 class="box">过渡动画效果</h2>
+		<div id="line"></div>
+		<input type="button" class="box" value="change" onclick="changeline()">
+	</div>
+</body>
+</html>
